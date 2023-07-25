@@ -7,18 +7,19 @@
     <link rel="stylesheet" href="styles.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <title>Diario Digital Paraná</title>
+    <title>Diario Digital Regional</title>
 </head>
 
 <body>
     <header>
         <nav>
             <ul>
-                <li><a style="color:#fff;" >Inicio</a></li> <!-- ELEGIR A DONDE REDIRIGIR -->
-                <li><a href="#">Noticias</a></li> <!-- ELEGIR A DONDE REDIRIGIR -->
-                <li><a data-bs-toggle="modal" style="color:#fff;" data-bs-target="#staticBackdropOpinion">Opinión</a></li> <!-- ELEGIR A DONDE REDIRIGIR -->
+                <li><a style="color:#fff;" href="index.html" >Inicio</a></li> <!-- ELEGIR A DONDE REDIRIGIR -->
+                <li><a href="Noticias.html">Noticias</a></li> <!-- ELEGIR A DONDE REDIRIGIR -->
+                <li><a data-bs-toggle="modal" style="color:#fff;" data-bs-target="#staticBackdropOpinion">Quienes Somos</a></li> <!-- ELEGIR A DONDE REDIRIGIR -->
                 <!-- SELECT INFO MODAL -->
-                <li><a data-bs-toggle="modal" style="color:#fff;" data-bs-target="#staticBackdropContact">Contacto</a></li> <!-- ELEGIR A DONDE REDIRIGIR -->
+                <li><a data-bs-toggle="modal" style="color:#fff;" data-bs-target="#staticBackdropContact">Contacto</a></li> 
+                <!-- ELEGIR A DONDE REDIRIGIR -->
                               <!-- SELECT INFO MODAL -->
 
               </ul>
@@ -27,9 +28,9 @@
 
     <section class="hero">
         <div class="hero-content">
-            <h1>Diario Digital Paraná</h1>
+            <h1>Diario Digital Regional</h1>
             <p>Tu fuente confiable de noticias</p>
-            <a href="#" class="btn">Leer más</a> <!-- ELEGIR A DONDE REDIRIGIR -->
+            <!-- <a href="LeerMas.html" class="btn">Leer más</a> ELEGIR A DONDE REDIRIGIR -->
         </div>
     </section>
 
@@ -38,13 +39,16 @@
             <h2>Últimas noticias</h2>
             <div class="news-grid">
                 <div class="news-card">
-                    <a href="new1.html">
-                        <img src="news1.jpeg" class="img-fluid" alt="Noticia 1">
+                    <a href="Noticia-luchi-droga-en-parana/DrogaEnParana.html">
+                        <img src="Noticia-luchi-droga-en-parana/Lucia-Varisco.jpg" class="img-fluid" alt="Luchi">
                     </a>
-                    <a href="new1.html">
-                        <h3>Titular de la noticia 1</h3>
+                    <a href="Noticia-luchi-droga-en-parana/DrogaEnParana.html">
+                        <h3 style="color: red;">CUANDO LA DROGA, MANDA</h3>
                     </a>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <p>Preocupante reflexión de una mamá paranaense...</p>
+                  <a href="Noticia-luchi-droga-en-parana/DrogaEnParana.html">
+                    Leer más...
+                  </a>
                 </div>
                 <div class="news-card">
                     <a href="new2.html">
@@ -68,20 +72,20 @@
         </div>
     </section>
  
-  <!-- Modal Opinion-->
+  <!-- Modal Quienes Somos-->
   <div class="modal fade" id="staticBackdropOpinion" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+          <h5 class="modal-title" id="staticBackdropLabel">Quienes Somos...</h5>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
-          ...
+          Somos un grupo de madres que conscientes de la gravísima problemática social actual en Paraná, vemos con preocupación como se postulan candidatos a la intendencia de nuestra ciudad, estando no solo vinculados sino también auspiciados por los mismos narcotraficantes.
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Understood</button>
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+          <!-- <button type="button" class="btn btn-primary">Understood</button> -->
         </div>
       </div>
     </div>
@@ -91,22 +95,26 @@
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="staticBackdropLabel">Modal Contact</h5>
+          <h5 class="modal-title" id="staticBackdropLabel">Datos de Contacto</h5>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
-          ...
+          Correo electrónico: redaccion@soloverdad.com
+          <br>
+          Teléfono: +541120239928
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Understood</button>
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
         </div>
       </div>
     </div>
   </div>
-    <footer>
-        <p>&copy; 2023 Diario Digital. Todos los derechos reservados.</p>
-    </footer>
+
+
+  
+  <footer>
+    <p>&copy; 2023 Diario Digital. --TPL JV-- Todos los derechos reservados. --CLV--</p>
+</footer>
 
     <script src="script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"

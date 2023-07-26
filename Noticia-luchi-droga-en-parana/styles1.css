@@ -175,47 +175,28 @@ nav ul li a {
 
     }
 
-    .foto-derecha{
+    .with-picture{
       display: flex;
-      width: 100%;
-      height: 350px;
-      margin: 5px 5px;
+      flex-wrap: wrap;
     }
-    .foto-dereha img{
-      width: auto;
-      height: 100%;
-      margin: auto auto;
+    .with-picture img{
+      width: 25%;
+      height: auto;
+      object-fit: cover;
+    }
+    .with-picture .content {
+      width: 75%;
+      padding: 20px;
+      box-sizing: border-box;
     }
 
   
-    @media (width<=1200px){
-      .foto-izquierda{
-        display: flex;
-        flex-wrap: wrap;
+    @media (max-width: 768px){
+      .with-picture img{
+        width: 100%;  
+      }
+      .with-picture .content{
         width: 100%;
-        height: 350px;
-        margin: 20px auto;
-      }
-      .foto-izquierda img{
-        width: auto;
-        height: 50%;
-        margin: auto 10px;
-  
-      }
-      .foto-izquierda p{
-        height: 50%;
-      }
-  
-      .foto-derecha{
-        display: flex;
-        width: 100%;
-        height: 350px;
-        margin: 5px 5px;
-      }
-      .foto-dereha img{
-        width: auto;
-        height: 100%;
-        margin: auto auto;
       }
     }
     
